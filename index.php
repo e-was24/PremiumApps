@@ -15,7 +15,10 @@
 <body>
 
     <!-- NAVBAR DI ATAS, LANGSUNG DI BODY -->
-    <?php include __DIR__ . '/includes/navbar.php'; ?>
+    <div class="navbar">
+        <?php include __DIR__ . '/includes/navbar.php'; ?>
+    </div>
+
 
     <!-- KONTEN UTAMA -->
     <div class="container">

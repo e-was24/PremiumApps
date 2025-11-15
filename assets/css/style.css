@@ -17,6 +17,10 @@ body {
     width: 100%;
 }
 
+.navbar {
+    position: fixed;
+}
+
 /* OPTIONAL — kalau mau landing page tetap tengah 
 .landing {
     margin-top: 30px;
