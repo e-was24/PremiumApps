@@ -6,15 +6,13 @@
 }
 
 nav {
-    position: fixed;
-    top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px 10px;
     font-family: "poppins", sans-serif;
     border-radius: 20px;
-    margin: 0px 10px;
+    margin: 10px;
     backdrop-filter: blur(2px);
 }
 
