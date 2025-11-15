@@ -38,6 +38,10 @@
     gap: 3rem;
 }
 
+.nav-top ul li {
+    margin: 20px;
+}
+
 .nav-top ul li a {
     text-decoration: none;
     font-family: "poppins", sans-serif;
