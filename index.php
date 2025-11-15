@@ -22,11 +22,13 @@ require_once __DIR__ . '/includes/header.php';
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $app['title'] ?> - Welcome</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -52,5 +54,10 @@ require_once __DIR__ . '/includes/header.php';
     </section>
 
     <?php include __DIR__ . '/includes/footer.php'; ?>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
