@@ -4,10 +4,13 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    height: fit-content;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: fit-content;
 }
