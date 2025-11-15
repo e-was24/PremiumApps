@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="model">
-            <img src="gradient-remove-bg.png" alt="bg-model">
+            <img src="assets/img/gradient-remove-bg.png" alt="bg-model">
             <spline-viewer url="https://prod.spline.design/YDmIgIdG64R0IFiw/scene.splinecode"></spline-viewer>
             <div class="block"></div>
         </div>
