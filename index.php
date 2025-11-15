@@ -29,6 +29,8 @@ require_once __DIR__ . '/includes/header.php';
     <title><?= $app['title'] ?> - Welcome</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/landingPage.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
