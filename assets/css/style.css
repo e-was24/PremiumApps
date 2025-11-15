@@ -19,6 +19,8 @@ body {
 
 .navbar {
     position: fixed;
+    z-index: 9999;
+    top: 0;
 }
 
 /* OPTIONAL — kalau mau landing page tetap tengah 
