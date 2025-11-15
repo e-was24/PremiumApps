@@ -23,6 +23,8 @@
             <?php include __DIR__ . '/includes/landingPage.php'; ?>
         </div>
 
+        <br>
+
         <div class="footer">
             <?php include __DIR__ . '/includes/footer.php'; ?>
         </div>
