@@ -38,11 +38,12 @@
     gap: 3rem;
 }
 
-.nav-top ul li {
-    padding: 20px;
+.nav-top ul .btn-cover {
+    padding: 10px;
+    border-radius: 50px;
 }
 
-.nav-top ul li a {
+.nav-top ul .btn-cover a {
     text-decoration: none;
     font-family: "poppins", sans-serif;
     color: white;
@@ -58,7 +59,7 @@
     margin: 10px 20px;
 }
 
-.nav-top ul li a:hover {
+.nav-top ul .btn-cover a:hover {
     background: #333;
     box-shadow: 0 0 40px #7777778f;
 }
