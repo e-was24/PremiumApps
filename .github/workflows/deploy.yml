@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Deploy to InfinityFree via FTP
+      - name: Deploy to InfinityFree
         uses: SamKirkland/FTP-Deploy-Action@v3.1.1
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./   # Folder lain kalau perlu
-          server-dir: /htdocs/  # Folder InfinityFree
+          ftp-server: ${{ secrets.FTP_HOST }}
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./        # folder project kamu
+          git-ftp-args: "--insecure"
