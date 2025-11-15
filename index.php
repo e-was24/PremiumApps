@@ -34,11 +34,16 @@ require_once __DIR__ . '/includes/header.php';
 
 <body>
     <div class="container">
-        <?php include __DIR__ . '/includes/navbar.php'; ?>
+        <div class="navbar">
+            <?php include __DIR__ . '/includes/navbar.php'; ?>
+        </div>
+        <div class="landing">
+            <?php include __DIR__ . '/includes/landingPage.php'; ?>
+        </div>
+        <div class="footer">
+            <?php include __DIR__ . '/includes/footer.php'; ?>
+        </div>
 
-        <?php include __DIR__ . '/includes/landingPage.php'; ?>
-
-        <?php include __DIR__ . '/includes/footer.php'; ?>
     </div>
 </body>
 
