@@ -22,8 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     position: fixed;
-    z-index: 9999;
-    top: 0;
+    top: -20dvh;
 }
 
 /* OPTIONAL — kalau mau landing page tetap tengah 
