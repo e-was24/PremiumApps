@@ -51,6 +51,7 @@
     border-radius: 50px;
     border: 1px solid white;
     transition: .3s ease-in-out;
+    margin: 10px 20px;
 }
 
 .nav-top ul li a:hover {
