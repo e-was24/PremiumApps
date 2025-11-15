@@ -1,11 +1,13 @@
+body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.container .navbar {
-    position: sticky;
-    top: 5px;
 }
