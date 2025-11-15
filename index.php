@@ -33,26 +33,7 @@ require_once __DIR__ . '/includes/header.php';
 
 <body>
     <?php include __DIR__ . '/includes/navbar.php'; ?>
-
-    <section class="landing-container">
-        <div class="card">
-            <img src="assets/img/logo.png" alt="Logo" class="logo">
-
-            <h1>Selamat Datang di <?= $app['title'] ?></h1>
-            <p class="subtitle">Silakan pilih mode akses Anda</p>
-
-            <div class="btn-group">
-                <a href="?guest=1" class="btn guest-btn">
-                    Masuk sebagai Guest
-                </a>
-
-                <a href="pages/auth/login.php" class="btn login-btn">
-                    Login / Register
-                </a>
-            </div>
-        </div>
-    </section>
-
+    <?php include '/includes/landingPage.php';?>
     <?php include __DIR__ . '/includes/footer.php'; ?>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
