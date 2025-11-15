@@ -6,8 +6,9 @@
 }
 
 .nav-top {
-    display: flex;
+    position: fixed;
     top: 0;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px 10px;
