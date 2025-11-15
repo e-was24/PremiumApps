@@ -1,25 +1,3 @@
-<?php
-// Start session
-session_start();
-
-// Jika user sudah login, langsung arahkan ke pasar member
-if (isset($_SESSION['user'])) {
-    header("Location: pages/market/member.php");
-    exit;
-}
-
-// Jika user memilih mode guest, arahkan ke pasar guest
-if (isset($_GET['guest'])) {
-    $_SESSION['guest'] = true;
-    header("Location: pages/market/guest.php");
-    exit;
-}
-
-// Load config dan template
-require_once __DIR__ . '/config/app.php';
-require_once __DIR__ . '/includes/header.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
