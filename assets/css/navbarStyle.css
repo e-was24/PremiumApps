@@ -16,7 +16,8 @@
     border-radius: 20px;
     margin: 10px;
     backdrop-filter: blur(2px);
-    z-index: 99999;
+    width: 100%;
+    z-index: 9999;
 }
 
 .nav-top .logo span {
