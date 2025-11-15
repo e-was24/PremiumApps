@@ -15,7 +15,7 @@ if (isset($_GET['guest'])) {
     exit;
 }
 
-// Load config dan template jika diperlukan
+// Load config dan template
 require_once __DIR__ . '/config/app.php';
 require_once __DIR__ . '/includes/header.php';
 ?>
@@ -33,23 +33,25 @@ require_once __DIR__ . '/includes/header.php';
 </head>
 
 <body>
+
+    <!-- NAVBAR DI ATAS, LANGSUNG DI BODY -->
+    <?php include __DIR__ . '/includes/navbar.php'; ?>
+
+    <!-- KONTEN UTAMA -->
     <div class="container">
-        <div class="navbar">
-            <?php include __DIR__ . '/includes/navbar.php'; ?>
-        </div>
         <div class="landing">
             <?php include __DIR__ . '/includes/landingPage.php'; ?>
         </div>
+
         <div class="footer">
             <?php include __DIR__ . '/includes/footer.php'; ?>
         </div>
-
     </div>
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
-
-
-<script>
-    AOS.init();
-</script>
 
 </html>
