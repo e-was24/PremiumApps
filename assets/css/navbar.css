@@ -14,7 +14,6 @@ nav {
     border-radius: 20px;
     margin: 10px;
     backdrop-filter: blur(2px);
-    width: 100%;
 }
 
 nav .logo span {
