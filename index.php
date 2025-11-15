@@ -34,8 +34,8 @@ require_once __DIR__ . '/includes/header.php';
 <body>
     <?php include __DIR__ . '/includes/navbar.php'; ?>
 
-    <?php include 'includes/landingPage.php';?>
-    
+    <?php include __DIR__ . '/includes/landingPage.php';?>
+
     <?php include __DIR__ . '/includes/footer.php'; ?>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
