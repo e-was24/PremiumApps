@@ -18,16 +18,106 @@ body {
     width: 100%;
 }
 
+/* ===== NAVBAR ===== */
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: -20dvh;
+    top: -20dvh;                  /* kamu bisa ubah nanti */
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
-/* OPTIONAL — kalau mau landing page tetap tengah 
-.landing {
-    margin-top: 30px;
+
+/* ===================================================== */
+/*                 RESPONSIVE — ALL DEVICE               */
+/* ===================================================== */
+
+
+/* --------- LARGE DESKTOP (2K / 4K) --------- */
+@media (min-width: 2000px) {
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
 }
-*/
+
+
+/* --------- DESKTOP MEDIUM --------- */
+@media (max-width: 1440px) {
+    body {
+        height: auto;
+    }
+}
+
+
+/* --------- LAPTOP --------- */
+@media (max-width: 1200px) {
+    .navbar {
+        top: -18dvh;
+    }
+}
+
+
+/* --------- TABLET LANDSCAPE --------- */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        top: -15dvh;
+    }
+}
+
+
+/* --------- TABLET PORTRAIT --------- */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
+    .navbar {
+        position: fixed;
+        top: -12dvh;
+    }
+
+    .container {
+        justify-content: start;
+        padding-top: 3rem;
+    }
+}
+
+
+/* --------- HP BESAR --------- */
+@media (max-width: 576px) {
+    body {
+        height: auto;
+    }
+
+    .navbar {
+        top: -10dvh;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+
+/* --------- HP KECIL --------- */
+@media (max-width: 480px) {
+    .navbar {
+        top: -8dvh;
+    }
+}
+
+
+/* --------- ULTRA SMALL (≤360px) --------- */
+@media (max-width: 360px) {
+    .navbar {
+        top: -6dvh;
+    }
+}

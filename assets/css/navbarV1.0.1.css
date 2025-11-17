@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* NAVBAR */
 .nav-top {
     position: fixed;
     top: 0;
@@ -61,4 +63,108 @@
 .nav-top ul .btn-cover a:hover {
     background: #333;
     box-shadow: 0 0 40px #7777778f;
+}
+
+
+/* ===================================================== */
+/*                MEDIA QUERY — RESPONSIVE               */
+/* ===================================================== */
+
+/* Laptop sedang */
+@media (max-width: 1200px) {
+    .nav-top ul {
+        gap: 2rem;
+    }
+
+    .nav-top .logo span {
+        font-size: 1.8em;
+    }
+}
+
+/* Tablet besar */
+@media (max-width: 992px) {
+    .nav-top ul {
+        gap: 1.6rem;
+    }
+
+    .nav-top ul .btn-cover a {
+        padding: 8px 18px;
+    }
+}
+
+/* Tablet normal */
+@media (max-width: 768px) {
+    .nav-top {
+        justify-content: space-between;
+        padding: 12px 16px;
+    }
+
+    .nav-top ul {
+        gap: 1rem;
+    }
+
+    .nav-top ul .btn-cover a {
+        padding: 7px 14px;
+        font-size: .75em;
+    }
+
+    .nav-top .logo span {
+        font-size: 1.5em;
+    }
+}
+
+/* HP besar */
+@media (max-width: 576px) {
+    .nav-top {
+        padding: 10px 12px;
+    }
+
+    .nav-top ul {
+        gap: .7rem;
+    }
+
+    .nav-top ul .btn-cover a {
+        padding: 6px 12px;
+        font-size: .7em;
+    }
+
+    .nav-top .logo span {
+        font-size: 1.3em;
+    }
+}
+
+/* HP kecil */
+@media (max-width: 480px) {
+    .nav-top {
+        padding: 8px 10px;
+    }
+
+    .nav-top ul {
+        gap: .5rem;
+    }
+
+    .nav-top ul .btn-cover a {
+        padding: 6px 10px;
+        font-size: .65em;
+    }
+
+    .nav-top .logo span {
+        font-size: 1.1em;
+    }
+}
+
+/* Layar sangat kecil (smartwatch / 360px) */
+@media (max-width: 360px) {
+    .nav-top ul {
+        gap: .3rem;
+    }
+
+    .nav-top ul .btn-cover a {
+        padding: 4px 8px;
+        font-size: .6em;
+    }
+
+    .nav-top .logo span {
+        font-size: 1em;
+    }
 }

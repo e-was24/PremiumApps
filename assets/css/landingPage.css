@@ -1,26 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
-/* body {
-    
-    height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-} */
-
+/* WRAPPER */
 .content {
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
+/* LEFT TEXT */
 .content .desc {
     display: flex;
     justify-content: center;
@@ -39,6 +32,7 @@
     color: #888;
 }
 
+/* BUTTON */
 .content .desc .btn-option {
     display: flex;
     justify-content: start;
@@ -64,7 +58,7 @@
     box-shadow: 0 0 20px #757575;
 }
 
-
+/* RIGHT MODEL */
 .content .model {
     position: absolute;
     z-index: 1;
@@ -90,23 +84,115 @@
     z-index: 999;
 }
 
+/* ===================================================== */
+/*             RESPONSIVE — ALL DEVICE RANGE             */
+/* ===================================================== */
 
-/* TABLET */
-
-@media (min-width: 998px ) and (max-width: 1300px) {
-    body {
-        overflow-x: hidden;
-        overflow-y: scroll;
+/* -------------- Laptop -------------- */
+@media (max-width: 1300px) {
+    .content .desc {
+        padding-left: 6rem;
+        font-size: 1.1em;
     }
+
     .content .model {
-        top: 0;
-        left: 0;
-        transform: translateX(0rem);
+        transform: translateX(15rem);
+    }
+
+    .content .model img {
+        right: 15rem;
+    }
+}
+
+/* -------------- Tablet Horizontal -------------- */
+@media (max-width: 998px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
     }
 
     .content .desc {
-        margin-top: 5rem;
-        font-size: 1.5em;
-        padding: 5rem;
+        width: 90%;
+        align-items: center;
+        padding-left: 0;
+        padding: 4rem 1rem;
+        font-size: 1.3em;
+    }
+
+    .content .btn-option {
+        justify-content: center;
+    }
+
+    .content .model {
+        position: relative;
+        transform: translateX(0);
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content .model img {
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 70%;
+    }
+
+    .content .model .block {
+        display: none;
+    }
+}
+
+/* -------------- Tablet Portrait -------------- */
+@media (max-width: 768px) {
+    .content .desc {
+        padding: 2rem;
+        font-size: 1.1em;
+    }
+
+    .content .model img {
+        width: 90%;
+    }
+}
+
+/* -------------- HP Besar -------------- */
+@media (max-width: 576px) {
+    .content .desc {
+        font-size: 1em;
+        gap: .7rem;
+    }
+
+    .content .btn-option {
+        flex-direction: column;
+    }
+
+    .content .btn-option .btn-masuk {
+        width: fit-content;
+        margin: 10px 0;
+    }
+
+    .content .model img {
+        width: 100%;
+    }
+}
+
+/* -------------- HP Kecil -------------- */
+@media (max-width: 480px) {
+    .content .desc {
+        padding: 1.5rem;
+        font-size: .9em;
+    }
+}
+
+/* -------------- Ultra small (≤360px) -------------- */
+@media (max-width: 360px) {
+    .content .desc {
+        padding: 1rem;
+        font-size: .8em;
+        gap: .5rem;
+    }
+
+    .content .model img {
+        width: 100%;
     }
 }
