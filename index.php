@@ -4,41 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $app['title'] ?> - Welcome</title>
+
+    <title><?= htmlspecialchars($app['title']) ?> - Welcome</title>
+
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets/css/styleV1.0.css">
+
+    <!-- AOS ANIMATION -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- COMPONENTS -->
     <link rel="stylesheet" href="assets/css/navbarV1.0.12.css">
     <link rel="stylesheet" href="assets/css/landingPageV1.0.12.css">
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body>
 
-    <!-- NAVBAR DI ATAS, LANGSUNG DI BODY -->
-    <div class="navbar">
-        <?php include __DIR__ . '/includes/navbar.php'; ?>
-    </div>
-
+    <!-- FIXED NAVBAR (tidak lagi dibungkus <div> agar tidak error posisi) -->
+    <?php include __DIR__ . '/includes/navbar.php'; ?>
 
     <!-- KONTEN UTAMA -->
-    <div class="container">
-        <div class="landing">
+    <main class="container">
+
+        <section class="landing" data-aos="fade-up">
             <?php include __DIR__ . '/includes/landingPage.php'; ?>
-        </div>
+        </section>
 
-        <br>
-
-        <div class="footer">
+        <footer class="footer">
             <?php include __DIR__ . '/includes/footer.php'; ?>
-        </div>
-    </div>
+        </footer>
 
-    <script>
-        AOS.init();
-    </script>
+    </main>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!-- JS NAVBAR -->
+    <script src="assets/js/navbar.js"></script>
 
 </body>
-
-<script src="assets/js/navbar.js"></script>
 
 </html>
