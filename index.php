@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/styleV1.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/navbarV1.0.1.0.css">
-    <link rel="stylesheet" href="assets/css/landingPageV1.css">
+    <link rel="stylesheet" href="assets/css/landingPageV1.0.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
