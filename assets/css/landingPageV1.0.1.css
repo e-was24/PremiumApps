@@ -11,21 +11,21 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    width: 100%;
 }
 
 /* LEFT TEXT */
 .content .desc {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: start;
-    flex-direction: column;
     width: 50%;
-    height: 100dvh;
+    min-height: 100dvh;
     gap: 1rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, sans-serif;
     color: white;
-    padding: 10px;
-    padding-left: 10rem;
+    padding: 10px 10rem;
 }
 
 .content .desc p {
@@ -35,8 +35,6 @@
 /* BUTTON */
 .content .desc .btn-option {
     display: flex;
-    justify-content: start;
-    align-items: center;
     gap: 2rem;
 }
 
@@ -49,8 +47,7 @@
     font-family: "poppins", sans-serif;
     font-weight: 800;
     transition: .3s ease-in-out;
-    z-index: 999;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .content .desc .btn-option .btn-masuk:hover {
@@ -61,16 +58,15 @@
 /* RIGHT MODEL */
 .content .model {
     position: absolute;
-    z-index: 1;
     right: 0;
-    transform: translateX(24rem);
+    transform: translateX(20rem);
     width: 100%;
-    cursor: pointer;
+    pointer-events: none;
 }
 
 .content .model img {
     position: absolute;
-    right: 22rem;
+    right: 20rem;
     top: 3rem;
 }
 
@@ -81,42 +77,40 @@
     position: absolute;
     top: 28rem;
     right: 0;
-    z-index: 999;
 }
 
 /* ===================================================== */
-/*             RESPONSIVE — ALL DEVICE RANGE             */
+/*                    RESPONSIVE FIX                     */
 /* ===================================================== */
 
-/* -------------- Laptop -------------- */
+/* --------- Laptop --------- */
 @media (max-width: 1300px) {
     .content .desc {
-        padding-left: 6rem;
-        font-size: 1.1em;
+        padding: 10px 5rem;
     }
 
     .content .model {
-        transform: translateX(15rem);
+        transform: translateX(12rem);
     }
 
     .content .model img {
-        right: 15rem;
+        right: 12rem;
     }
 }
 
-/* -------------- Tablet Horizontal -------------- */
-@media (max-width: 998px) {
+/* --------- Tablet Landscape --------- */
+@media (max-width: 992px) {
     .content {
         flex-direction: column;
         text-align: center;
+        gap: 2rem;
     }
 
     .content .desc {
         width: 90%;
         align-items: center;
-        padding-left: 0;
         padding: 4rem 1rem;
-        font-size: 1.3em;
+        min-height: auto;
     }
 
     .content .btn-option {
@@ -129,13 +123,14 @@
         width: 80%;
         display: flex;
         justify-content: center;
+        top: 0;
     }
 
     .content .model img {
         position: relative;
+        width: 70%;
         right: 0;
         top: 0;
-        width: 70%;
     }
 
     .content .model .block {
@@ -143,7 +138,7 @@
     }
 }
 
-/* -------------- Tablet Portrait -------------- */
+/* --------- Tablet Portrait --------- */
 @media (max-width: 768px) {
     .content .desc {
         padding: 2rem;
@@ -151,11 +146,11 @@
     }
 
     .content .model img {
-        width: 90%;
+        width: 85%;
     }
 }
 
-/* -------------- HP Besar -------------- */
+/* --------- HP Besar --------- */
 @media (max-width: 576px) {
     .content .desc {
         font-size: 1em;
@@ -172,11 +167,11 @@
     }
 
     .content .model img {
-        width: 100%;
+        width: 95%;
     }
 }
 
-/* -------------- HP Kecil -------------- */
+/* --------- HP Kecil --------- */
 @media (max-width: 480px) {
     .content .desc {
         padding: 1.5rem;
@@ -184,12 +179,11 @@
     }
 }
 
-/* -------------- Ultra small (≤360px) -------------- */
+/* --------- Ultra Small --------- */
 @media (max-width: 360px) {
     .content .desc {
         padding: 1rem;
         font-size: .8em;
-        gap: .5rem;
     }
 
     .content .model img {
