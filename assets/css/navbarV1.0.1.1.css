@@ -82,18 +82,100 @@
     }
 }
 
-/* Tablet besar */
-@media (max-width: 992px) {
-    .nav-top ul {
-        gap: 1.6rem;
+
+@media (max-width: 998px) {
+
+    /* NAV SLIDE */
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100dvh;
+        background: rgba(20, 20, 20, 0.95);
+        backdrop-filter: blur(12px);
+        padding: 7rem 2rem;
+        transition: .35s ease-in-out;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        border-right: 1px solid #222;
+        box-shadow: 8px 0 30px #00000070;
+        font-family: "poppins", sans-serif;
     }
 
-    .nav-top ul .btn-cover a {
-        padding: 8px 18px;
+    /* When menu opened */
+    nav.show {
+        left: 0;
+    }
+
+    /* Logo */
+    nav .logo {
+        width: fit-content;
+        font-size: 1.7em;
+        font-weight: 700;
+        background: #1a1a1a;
+        padding: 18px 20px;
+        border-radius: 16px;
+        box-shadow: 0 0 12px #0004;
+        font-family: "poppins", sans-serif;
+        color: white;
+    }
+
+    /* Nav List */
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: flex;
+        align-items: center;
+        gap: .9rem;
+        color: #eee;
+        text-decoration: none;
+        padding: 10px 0;
+        width: 100%;
+        border-bottom: 2px solid transparent;
+        transition: .25s ease-in-out;
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+
+    nav ul li a:hover {
+        border-bottom: 2px solid #e3e3e3;
+        padding-left: 10px;
+    }
+
+    /* HAMBURGER BUTTON */
+    #menu {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background: #1b1b1b;
+        padding: 12px 12px;
+        border-radius: 12px;
+        border: 1px solid #222;
+        cursor: pointer;
+        z-index: 1000;
+        transition: .35s ease-in-out;
+        box-shadow: 0 0 15px #0005;
+    }
+
+    /* When menu is active */
+    #menu.active {
+        left: calc(60% - 0px); /* geser ikut panel */
+        box-shadow: 0 0 20px #0009;
+        background: #222;
     }
 }
 
-/* Tablet normal */
+/* 
+
 @media (max-width: 768px) {
     .nav-top {
         justify-content: space-between;
@@ -114,7 +196,7 @@
     }
 }
 
-/* HP besar */
+
 @media (max-width: 576px) {
     .nav-top {
         padding: 10px 12px;
@@ -134,7 +216,7 @@
     }
 }
 
-/* HP kecil */
+
 @media (max-width: 480px) {
     .nav-top {
         padding: 8px 10px;
@@ -154,7 +236,7 @@
     }
 }
 
-/* Layar sangat kecil (smartwatch / 360px) */
+
 @media (max-width: 360px) {
     .nav-top ul {
         gap: .3rem;
@@ -168,4 +250,4 @@
     .nav-top .logo span {
         font-size: 1em;
     }
-}
+} */
