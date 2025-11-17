@@ -39,4 +39,6 @@
 
 </body>
 
+<script src="assets/js/navbar.js"></script>
+
 </html>
