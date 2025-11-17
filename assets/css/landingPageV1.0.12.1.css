@@ -123,8 +123,6 @@
         position: relative;
         transform: translateX(0);
         width: 80%;
-        display: flex;
-        justify-content: center;
         top: 0;
     }
 
@@ -140,55 +138,3 @@
     }
 }
 
-/* --------- Tablet Portrait --------- */
-@media (max-width: 768px) {
-    .content .desc {
-        padding: 2rem;
-        font-size: 1.1em;
-    }
-
-    .content .model img {
-        width: 85%;
-    }
-}
-
-/* --------- HP Besar --------- */
-@media (max-width: 576px) {
-    .content .desc {
-        font-size: 1em;
-        gap: .7rem;
-    }
-
-    .content .btn-option {
-        flex-direction: column;
-    }
-
-    .content .btn-option .btn-masuk {
-        width: fit-content;
-        margin: 10px 0;
-    }
-
-    .content .model img {
-        width: 95%;
-    }
-}
-
-/* --------- HP Kecil --------- */
-@media (max-width: 480px) {
-    .content .desc {
-        padding: 1.5rem;
-        font-size: .9em;
-    }
-}
-
-/* --------- Ultra Small --------- */
-@media (max-width: 360px) {
-    .content .desc {
-        padding: 1rem;
-        font-size: .8em;
-    }
-
-    .content .model img {
-        width: 100%;
-    }
-}
