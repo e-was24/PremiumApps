@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- COMPONENTS -->
-    <link rel="stylesheet" href="assets/css/navbarV1.0.13.css">
+    <link rel="stylesheet" href="assets/css/navbarV1.0.14.css">
     <link rel="stylesheet" href="assets/css/landingPageV1.0.12.1.css">
 </head>
 
