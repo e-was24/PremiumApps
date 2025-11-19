@@ -93,7 +93,7 @@ button {
         top: 0;
         left: -150dvw;
         /* sembunyikan full off-screen */
-        width: 20%;
+        width: fit-content;
         height: fit-content;
         background: rgba(20, 20, 20, 0.95);
         backdrop-filter: blur(12px);
@@ -107,7 +107,6 @@ button {
         border-right: 1px solid #222;
         box-shadow: 8px 0 30px #00000070;
         font-family: "Poppins", sans-serif;
-        font-size: 60%;
     }
 
     nav.show {
