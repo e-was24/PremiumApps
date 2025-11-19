@@ -20,11 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const payload = { username, email, password };
 
         try {
-            const res = await fetch("../../api/SignUp.php", {
+            const res = await fetch("/api/SignUp.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload)
             });
+
 
             const data = await res.json();
 
