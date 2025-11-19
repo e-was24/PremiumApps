@@ -61,7 +61,6 @@
     right: 0;
     transform: translateX(20rem);
     width: 100%;
-    pointer-events: none;
     z-index: 9999;
 }
 

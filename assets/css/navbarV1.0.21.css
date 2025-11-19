@@ -91,14 +91,16 @@ button {
     nav {
         position: fixed;
         top: 0;
-        left: -150dvw; /* sembunyikan full off-screen */
+        left: -150dvw;
+        /* sembunyikan full off-screen */
         width: 40%;
         height: 100dvh;
         background: rgba(20, 20, 20, 0.95);
         backdrop-filter: blur(12px);
         padding: 7rem 2rem;
         transition: .35s ease-in-out;
-        z-index: 9999; /* navbar di atas semua konten */
+        z-index: 9999;
+        /* navbar di atas semua konten */
         display: flex;
         flex-direction: column;
         gap: 4rem;
@@ -183,23 +185,23 @@ button {
         position: fixed;
         top: 20px;
         left: 20px;
+        transform: translateX(0);
         background: #1b1b1b;
         padding: 12px 12px;
         border-radius: 12px;
         border: 1px solid #222;
         cursor: pointer;
-        z-index: 999999; /* paling tinggi */
+        z-index: 999999;
         transition: .35s ease-in-out;
         box-shadow: 0 0 15px #0005;
-        display: block;
     }
 
-    /* Saat menu terbuka → pindah ke pojok kanan */
+    /* Saat menu terbuka → geser ke kanan */
     #menu.active {
-        top: 20px;
-        right: 20px;
-        left: auto; /* override left */
+        transform: translateX(calc(100vw - 60px));
+        /* atau nilai yg kamu mau */
         background: #222;
         box-shadow: 0 0 20px #0009;
     }
+
 }
