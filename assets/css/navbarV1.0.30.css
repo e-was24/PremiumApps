@@ -10,9 +10,6 @@ button {
     display: none;
 }
 
-#navbar li .btn-signIn::marker {
-    display: none;
-}
 
 
 /* ========================= */
