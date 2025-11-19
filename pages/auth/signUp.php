@@ -10,23 +10,23 @@
         <form id="signupForm">
             <label>
                 <p>Username :</p>
-                <input type="text" id="username" name="username" required>
+                <input type="text" placeholder="username" id="username" name="username" required>
             </label>
 
             <label>
                 <p>Email :</p>
-                <input type="email" id="email" name="email" required>
+                <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
             </label>
 
             <div class="password">
                 <label>
                     <p>Password :</p>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" placeholder="password" id="password" name="password" required>
                 </label>
 
                 <label>
                     <p>Confirm :</p>
-                    <input type="password" id="confirm-password" required>
+                    <input type="password" placeholder="password" id="confirm-password" required>
                 </label>
             </div>
 
