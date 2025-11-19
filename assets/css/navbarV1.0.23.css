@@ -182,24 +182,25 @@ button {
     /*    HAMBURGER BUTTON   */
     /* ===================== */
     #menu {
+        display: block !important;
         position: fixed;
         top: 20px;
         left: 20px;
-        transform: translateX(0);
         background: #1b1b1b;
         padding: 12px 12px;
         border-radius: 12px;
         border: 1px solid #222;
         cursor: pointer;
         z-index: 999999;
+        /* paling tinggi */
         transition: .35s ease-in-out;
         box-shadow: 0 0 15px #0005;
     }
 
-    /* Saat menu terbuka → geser ke kanan */
+    /* Saat NAV terbuka → hamburger pindah ke kanan */
     #menu.active {
-        transform: translateX(calc(100vw - 60px));
-        /* atau nilai yg kamu mau */
+        left: auto;
+        right: 20px;
         background: #222;
         box-shadow: 0 0 20px #0009;
     }
