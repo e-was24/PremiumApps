@@ -31,7 +31,7 @@ button {
     z-index: 99999;
 }
 
-.nav-top {
+#navbar {
     position: absolute;
     top: 0;
     right: 0;
@@ -47,30 +47,30 @@ button {
     z-index: 99999;
 }
 
-.nav-top .logo {
+#navbar .logo {
     font-size: 1.2em;
     font-weight: 800;
     color: #ffffff;
 }
 
-.nav-top .logo span {
+#navbar .logo span {
     font-weight: 600;
     color: #535353;
     font-size: 2em;
 }
 
-.nav-top ul {
+#navbar ul {
     display: flex;
     list-style: none;
     gap: 3rem;
 }
 
-.nav-top ul .btn-cover {
+#navbar ul .btn-cover {
     padding: 20px;
     border-radius: 50px;
 }
 
-.nav-top ul .btn-cover a {
+#navbar ul .btn-cover a {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     color: white;
@@ -85,7 +85,7 @@ button {
     transition: .3s ease-in-out;
 }
 
-.nav-top ul .btn-cover a:hover {
+#navbar ul .btn-cover a:hover {
     background: #333;
     box-shadow: 0 0 40px #7777778f;
 }
@@ -104,11 +104,11 @@ canvas {
 
 /* Laptop sedang */
 @media (max-width: 1200px) {
-    .nav-top ul {
+    #navbar ul {
         gap: 2rem;
     }
 
-    .nav-top .logo span {
+    #navbar .logo span {
         font-size: 1.8em;
     }
 }
