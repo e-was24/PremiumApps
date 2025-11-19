@@ -107,6 +107,7 @@ button {
         border-right: 1px solid #222;
         box-shadow: 8px 0 30px #00000070;
         font-family: "Poppins", sans-serif;
+        font-size: 60%;
     }
 
     nav.show {

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- COMPONENTS -->
-    <link rel="stylesheet" href="assets/css/navbarV1.0.26.css">
+    <link rel="stylesheet" href="assets/css/navbarV1.0.27.css">
     <link rel="stylesheet" href="assets/css/landingPageV1.0.18.css">
 </head>
 
