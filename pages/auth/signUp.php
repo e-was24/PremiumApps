@@ -1,6 +1,6 @@
 <?php include "../../includes/header.php"; ?>
 <?php include "../../includes/navbar.php"; ?>
-<link rel="stylesheet" href="../../assets/css/navbarV1.0.29.css">
+<link rel="stylesheet" href="../../assets/css/navbarV1.0.30.css">
 <link rel="stylesheet" href="../../assets/css/SignUpV1.0.0.css">
 
 <div class="cover">
