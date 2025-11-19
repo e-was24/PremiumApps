@@ -4,15 +4,16 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 button {
     display: none;
 }
 
-
-/* NAVBAR */
+/* ============================ */
+/*          NAVBAR DESKTOP      */
+/* ============================ */
 .nav-top {
     position: absolute;
     top: 0;
@@ -21,7 +22,7 @@ button {
     justify-content: space-around;
     align-items: center;
     padding: 20px 10px;
-    font-family: "poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     border-radius: 20px;
     margin: 10px;
     backdrop-filter: blur(2px);
@@ -29,16 +30,16 @@ button {
     z-index: 99999;
 }
 
-.nav-top .logo span {
-    font-weight: 600;
-    color: #535353;
-    font-size: 2em;
-}
-
 .nav-top .logo {
     font-size: 1.2em;
     font-weight: 800;
     color: #ffffff;
+}
+
+.nav-top .logo span {
+    font-weight: 600;
+    color: #535353;
+    font-size: 2em;
 }
 
 .nav-top ul {
@@ -54,7 +55,7 @@ button {
 
 .nav-top ul .btn-cover a {
     text-decoration: none;
-    font-family: "poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: white;
     display: flex;
     justify-content: center;
@@ -72,10 +73,9 @@ button {
     box-shadow: 0 0 40px #7777778f;
 }
 
-
-/* ===================================================== */
-/*                MEDIA QUERY — RESPONSIVE               */
-/* ===================================================== */
+/* ============================ */
+/*        MEDIA QUERIES         */
+/* ============================ */
 
 /* Laptop sedang */
 @media (max-width: 1200px) {
@@ -88,7 +88,7 @@ button {
     }
 }
 
-
+/* Mobile mode */
 @media (max-width: 998px) {
 
     /* NAV SLIDE */
@@ -102,13 +102,13 @@ button {
         backdrop-filter: blur(12px);
         padding: 7rem 2rem;
         transition: .35s ease-in-out;
-        z-index: 999;
+        z-index: 9999; /* dinaikkan agar tidak kalah dari nav-top */
         display: flex;
         flex-direction: column;
         gap: 4rem;
         border-right: 1px solid #222;
         box-shadow: 8px 0 30px #00000070;
-        font-family: "poppins", sans-serif;
+        font-family: "Poppins", sans-serif;
     }
 
     /* When menu opened */
@@ -116,7 +116,7 @@ button {
         left: 0;
     }
 
-    /* Logo */
+    /* Logo Mobile */
     nav .logo {
         width: fit-content;
         font-size: 1.7em;
@@ -125,7 +125,6 @@ button {
         padding: 18px 20px;
         border-radius: 16px;
         box-shadow: 0 0 12px #0004;
-        font-family: "poppins", sans-serif;
         color: white;
     }
 
@@ -157,7 +156,7 @@ button {
         padding-left: 10px;
     }
 
-    /* HAMBURGER BUTTON */
+    /* Hamburger Button */
     #menu {
         position: fixed;
         top: 20px;
@@ -167,93 +166,14 @@ button {
         border-radius: 12px;
         border: 1px solid #222;
         cursor: pointer;
-        z-index: 1000;
+        z-index: 10000;
         transition: .35s ease-in-out;
         box-shadow: 0 0 15px #0005;
     }
 
-    /* When menu is active */
     #menu.active {
-        left: calc(60% - 0px); /* geser ikut panel */
+        left: calc(60% - 0px);
         box-shadow: 0 0 20px #0009;
         background: #222;
     }
 }
-
-/* 
-
-@media (max-width: 768px) {
-    .nav-top {
-        justify-content: space-between;
-        padding: 12px 16px;
-    }
-
-    .nav-top ul {
-        gap: 1rem;
-    }
-
-    .nav-top ul .btn-cover a {
-        padding: 7px 14px;
-        font-size: .75em;
-    }
-
-    .nav-top .logo span {
-        font-size: 1.5em;
-    }
-}
-
-
-@media (max-width: 576px) {
-    .nav-top {
-        padding: 10px 12px;
-    }
-
-    .nav-top ul {
-        gap: .7rem;
-    }
-
-    .nav-top ul .btn-cover a {
-        padding: 6px 12px;
-        font-size: .7em;
-    }
-
-    .nav-top .logo span {
-        font-size: 1.3em;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .nav-top {
-        padding: 8px 10px;
-    }
-
-    .nav-top ul {
-        gap: .5rem;
-    }
-
-    .nav-top ul .btn-cover a {
-        padding: 6px 10px;
-        font-size: .65em;
-    }
-
-    .nav-top .logo span {
-        font-size: 1.1em;
-    }
-}
-
-
-@media (max-width: 360px) {
-    .nav-top ul {
-        gap: .3rem;
-    }
-
-    .nav-top ul .btn-cover a {
-        padding: 4px 8px;
-        font-size: .6em;
-    }
-
-    .nav-top .logo span {
-        font-size: 1em;
-    }
-} */
