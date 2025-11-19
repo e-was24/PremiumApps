@@ -8,7 +8,7 @@
             dolorum.
         </p>
         <div class="btn-option">
-            <a href="pages/auth/signUp.php" class="btn-masuk">Sign up</a>
+            <a href="pages/auth/SignUp.php" class="btn-masuk">Sign up</a>
             <a href="" class="btn-masuk">Guest</a>
         </div>
     </div>
