@@ -33,7 +33,7 @@
     </div>
 </div>
 
-<script src="../../assets/js/auth/SignUp.js?v=5"></script>
+<script src="../../assets/js/auth/SignUp.js?v=6"></script>
 
 
 

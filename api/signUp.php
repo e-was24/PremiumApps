@@ -1,5 +1,7 @@
 <?php
 header("Content-Type: application/json");
+// proses JSON POST
+echo json_encode(["status"=>"success"]);
 
 // =====================
 //  READ RAW JSON INPUT
