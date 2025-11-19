@@ -1,5 +1,5 @@
 <?php include "../../includes/header.php"; ?>
-<?php include "../../includes/navbar.php"; ?>
+<?php include "../../includes/signUp-navbar.php"; ?>
 <link rel="stylesheet" href="../../assets/css/navbarV1.0.30.css">
 <link rel="stylesheet" href="../../assets/css/SignUpV1.0.0.css">
 
