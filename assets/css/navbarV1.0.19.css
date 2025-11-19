@@ -92,7 +92,7 @@ button {
         position: fixed;
         top: 0;
         left: -100dvw; /* sembunyikan full off-screen */
-        width: 60%;
+        width: 40%;
         height: 100dvh;
         background: rgba(20, 20, 20, 0.95);
         backdrop-filter: blur(12px);
