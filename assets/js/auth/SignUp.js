@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             // ✅ Sesuaikan path relatif ke api
-            const res = await fetch("../../api/SignUp.php", {
+            const res = await fetch("../../api/signUp.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload)
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (data.status === "success") {
                 alert("Account created successfully!");
-                window.location.href = "SignIn.php"; // relatif terhadap pages/auth/
+                window.location.href = "signIn.php"; // relatif terhadap pages/auth/
             } else {
                 alert(data.msg || "Registration failed.");
             }
