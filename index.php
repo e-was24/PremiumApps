@@ -20,36 +20,36 @@
 
 <body>
 
-    <canvas id="bg-canvas"></canvas>
+    <canvas id="bg-canvas">
 
-    <!-- FIXED NAVBAR -->
-    <?php include __DIR__ . '/includes/navbar.php'; ?>
+        <!-- FIXED NAVBAR -->
+        <?php include __DIR__ . '/includes/navbar.php'; ?>
 
-    <!-- MAIN CONTENT -->
-    <main class="container">
+        <!-- MAIN CONTENT -->
+        <main class="container">
 
-        <section class="landing" data-aos="fade-up">
-            <?php include __DIR__ . '/includes/landingPage.php'; ?>
-        </section>
+            <section class="landing" data-aos="fade-up">
+                <?php include __DIR__ . '/includes/landingPage.php'; ?>
+            </section>
 
-        <footer class="footer">
-            <?php include __DIR__ . '/includes/footer.php'; ?>
-        </footer>
+            <footer class="footer">
+                <?php include __DIR__ . '/includes/footer.php'; ?>
+            </footer>
 
-    </main>
-
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 600,
-            once: true
-        });
-    </script>
-
-    <!-- JS NAVBAR -->
-    <script src="assets/js/navbarV1.0.3.js"></script>
+        </main>
+    </canvas>
 
 </body>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 600,
+        once: true
+    });
+</script>
+
+<!-- JS NAVBAR -->
+<script src="assets/js/navbarV1.0.3.js"></script>
 
 </html>
