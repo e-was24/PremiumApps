@@ -19,7 +19,8 @@ body {
     background: #2a2a2a;
     box-shadow: 0 0 40px #3333336a;
     border-radius: 20px;
-    margin-top: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .registration-sheet h2 {
