@@ -33,8 +33,6 @@
     </div>
 </div>
 
-<script src="../../assets/js/auth/SignUp.js?v=6"></script>
-
-
+<script src="../../assets/js/auth/SignUp.js?v=7"></script>
 
 <?php include "../../includes/footer.php"; ?>

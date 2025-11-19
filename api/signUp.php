@@ -1,20 +1,15 @@
 <?php
 header("Content-Type: application/json");
 
-// =====================
-//  READ RAW JSON INPUT
-// =====================
+// Ambil input JSON
 $raw = file_get_contents("php://input");
 $data = json_decode($raw, true);
 
-// Ambil input
 $username = trim($data["username"] ?? "");
 $email    = trim($data["email"] ?? "");
 $password = $data["password"] ?? "";
 
-// =====================
-//  LOAD DATABASE FILE
-// =====================
+// File database JSON
 $data_file = __DIR__ . "/../storage/db/userAccount.json";
 
 if (!file_exists($data_file)) {
@@ -23,9 +18,7 @@ if (!file_exists($data_file)) {
 
 $users = json_decode(file_get_contents($data_file), true);
 
-// =====================
-//  BASIC VALIDATION
-// =====================
+// VALIDASI
 if ($username === "" || $email === "" || $password === "") {
     echo json_encode(["status" => "error", "msg" => "All fields are required"]);
     exit;
@@ -46,9 +39,7 @@ if (strlen($password) < 6) {
     exit;
 }
 
-// =====================
-//  CHECK DUPLICATE
-// =====================
+// CEK DUPLIKAT
 foreach ($users as $u) {
     if (strtolower($u["email"]) === strtolower($email)) {
         echo json_encode(["status" => "error", "msg" => "Email already registered"]);
@@ -60,20 +51,12 @@ foreach ($users as $u) {
     }
 }
 
-// =====================
-//  SECURITY LAYER
-// =====================
-
-// Hash password (bcrypt)
+// SECURITY
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+$vector1 = bin2hex(random_bytes(16));
+$vector2 = base64_encode(random_bytes(24));
 
-// Two Security Vectors
-$vector1 = bin2hex(random_bytes(16)); 
-$vector2 = base64_encode(random_bytes(24)); 
-
-// =====================
-//  SAVE NEW USER
-// =====================
+// SIMPAN USER
 $users[] = [
     "username"      => $username,
     "email"         => $email,
@@ -84,9 +67,9 @@ $users[] = [
     "created_at"    => date("Y-m-d H:i:s")
 ];
 
-// Save JSON
+// Tulis JSON
 file_put_contents($data_file, json_encode($users, JSON_PRETTY_PRINT));
 
-// Response JSON final
+// Response JSON
 echo json_encode(["status" => "success", "msg" => "Account created successfully"]);
 exit;

@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const payload = { username, email, password };
 
         try {
-            const res = await fetch("/api/SignUp.php", {
+            // ✅ Sesuaikan path relatif ke api
+            const res = await fetch("../../api/SignUp.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload)
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (data.status === "success") {
                 alert("Account created successfully!");
-                window.location.href = "/pages/auth/SignIn.php"; // arahkan ke SignIn
+                window.location.href = "SignIn.php"; // relatif terhadap pages/auth/
             } else {
                 alert(data.msg || "Registration failed.");
             }
