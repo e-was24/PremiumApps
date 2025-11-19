@@ -2,6 +2,7 @@
 <?php include "../../includes/signUp-navbar.php"; ?>
 <link rel="stylesheet" href="../../assets/css/navbarV1.0.30.css">
 <link rel="stylesheet" href="../../assets/css/SignUpV1.0.2.css">
+<link rel="stylesheet" href="../../assets/css/styleV1.0.6.css">
 
 <!-- WebGL Background -->
 <canvas id="bg-canvas"></canvas>
@@ -39,7 +40,7 @@
     </div>
 </div>
 
-<script src="../../assets/js/auth/signUp.js?v=7"></script>
+<script src="../../assets/js/auth/SignUp.js?v=7"></script>
 <script src="../../assets/js/navbarV1.0.3.js"></script>
 
 <?php include "../../includes/footer.php"; ?>
