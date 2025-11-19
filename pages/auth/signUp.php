@@ -36,5 +36,6 @@
 </div>
 
 <script src="../../assets/js/auth/signUp.js?v=7"></script>
+<script src="../../assets/js/navbarV1.0.3.js"></script>
 
 <?php include "../../includes/footer.php"; ?>
