@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,8 @@
 </head>
 
 <body>
+
+    <canvas id="bg-canvas"></canvas>
 
     <!-- FIXED NAVBAR -->
     <?php include __DIR__ . '/includes/navbar.php'; ?>
@@ -48,4 +51,5 @@
     <script src="assets/js/navbarV1.0.3.js"></script>
 
 </body>
+
 </html>
