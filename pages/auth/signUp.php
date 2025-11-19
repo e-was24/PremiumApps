@@ -5,7 +5,7 @@
     <div class="registration-sheet">
         <h2>Register Now</h2>
 
-        <form id="signupForm">
+        <form id="signupForm" >
             <label>
                 <p>Username :</p>
                 <input type="text" placeholder="username" id="username" name="username" required>

@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", async function (e) {
         e.preventDefault();
 
-        // Disable button while processing
         btn.disabled = true;
         btn.innerText = "Processing...";
 
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const password = document.getElementById("password").value;
         const confirmPassword = document.getElementById("confirm-password").value;
 
-        // ===== FRONT-END VALIDATION =====
+        // ===== VALIDASI =====
         if (username.length < 3) {
             alert("Username must be at least 3 characters.");
             return resetBtn();
@@ -36,17 +35,20 @@ document.addEventListener("DOMContentLoaded", function () {
             return resetBtn();
         }
 
-        // ===== PREPARE DATA =====
-        const formData = new FormData();      // <-- DEKLARASI DI SINI (AMAN)
-        formData.append("username", username);
-        formData.append("email", email);
-        formData.append("password", password);
+        // ===== KITA GUNAKAN JSON, BUKAN FormData =====
+        const payload = {
+            username: username,
+            email: email,
+            password: password
+        };
 
-        // ===== SEND TO API =====
         try {
             const res = await fetch("../../api/SignUp.php", {
                 method: "POST",
-                body: formData
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payload)
             });
 
             const data = await res.json();
@@ -66,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
         resetBtn();
     });
 
-    // ===== RESET BUTTON FUNCTION =====
     function resetBtn() {
         btn.disabled = false;
         btn.innerText = "Sign Up";

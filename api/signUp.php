@@ -1,28 +1,53 @@
 <?php
 header("Content-Type: application/json");
 
-// Path database JSON
+// =====================
+//  READ RAW JSON INPUT
+// =====================
+$raw = file_get_contents("php://input");
+$data = json_decode($raw, true);
+
+$username = trim($data["username"] ?? "");
+$email    = trim($data["email"] ?? "");
+$password = $data["password"] ?? "";
+
+// =====================
+//  LOAD DATABASE FILE
+// =====================
 $data_file = __DIR__ . "/../storage/db/userAccount.json";
 
-// Load file
 if (!file_exists($data_file)) {
     file_put_contents($data_file, "[]");
 }
 
 $users = json_decode(file_get_contents($data_file), true);
 
-// POST Data
-$username = trim($_POST["username"] ?? "");
-$email = trim($_POST["email"] ?? "");
-$password = $_POST["password"] ?? "";
-
-// Basic validation
+// =====================
+//  BASIC VALIDATION
+// =====================
 if ($username === "" || $email === "" || $password === "") {
     echo json_encode(["status" => "error", "msg" => "All fields are required"]);
     exit;
 }
 
-// Check duplicate username/email
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo json_encode(["status" => "error", "msg" => "Invalid email format"]);
+    exit;
+}
+
+if (strlen($username) < 3) {
+    echo json_encode(["status" => "error", "msg" => "Username too short"]);
+    exit;
+}
+
+if (strlen($password) < 6) {
+    echo json_encode(["status" => "error", "msg" => "Password too short"]);
+    exit;
+}
+
+// =====================
+//  CHECK DUPLICATE
+// =====================
 foreach ($users as $u) {
     if (strtolower($u["email"]) === strtolower($email)) {
         echo json_encode(["status" => "error", "msg" => "Email already registered"]);
@@ -34,16 +59,20 @@ foreach ($users as $u) {
     }
 }
 
-// ========= SECURITY ==========
+// =====================
+//     SECURITY LAYER
+// =====================
 
-// password hashing (bcrypt)
+// Hash password (bcrypt)
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-// create 2 security vectors
-$vector1 = bin2hex(random_bytes(16)); // 32 char
-$vector2 = base64_encode(random_bytes(24)); // 32 char
+// Two Security Vectors
+$vector1 = bin2hex(random_bytes(16)); 
+$vector2 = base64_encode(random_bytes(24)); 
 
-// Save new user
+// =====================
+//     SAVE NEW USER
+// =====================
 $users[] = [
     "username"      => $username,
     "email"         => $email,
@@ -54,7 +83,7 @@ $users[] = [
     "created_at"    => date("Y-m-d H:i:s")
 ];
 
-// Save to file
+// Save JSON
 file_put_contents($data_file, json_encode($users, JSON_PRETTY_PRINT));
 
-echo json_encode(["status" => "success", "msg" => "Account created"]);
+echo json_encode(["status" => "success", "msg" => "Account created successfully"]);
