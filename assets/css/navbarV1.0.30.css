@@ -205,8 +205,7 @@ button {
 
     /* Saat NAV terbuka → hamburger pindah ke kanan */
     #menu.active {
-        left: auto;
-        right: 20px;
+        left: 80dvw;
         background: #222;
         box-shadow: 0 0 20px #0009;
     }
