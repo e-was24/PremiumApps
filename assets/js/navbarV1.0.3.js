@@ -1,5 +1,6 @@
 const menu = document.getElementById('menu');
-const nav = document.getElementById('Navbar');
+const nav = document.getElementById("navbar");
+
 
 // Pastikan variabel WebGL sudah ada
 let canvas;

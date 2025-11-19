@@ -4,7 +4,7 @@
     </svg>
 </button>
 
-<nav id="Navbar">
+<nav class="nav-top" id="navbar">
     <div class="logo"><span>Premium</span><br>Apps .</div>
     <ul>
         <li><a href="#">
