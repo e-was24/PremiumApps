@@ -60,7 +60,6 @@
     right: -5rem;      /* geser lebih ke kanan */
     transform: translateX(25rem);  /* tambah jarak horizontal */
     width: 100%;
-    pointer-events: none;
     z-index: 9999;
 }
 
