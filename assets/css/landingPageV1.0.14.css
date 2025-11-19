@@ -59,7 +59,7 @@
 .content .model {
     position: absolute;
     right: 0;
-    transform: translateX(20rem);
+    transform: translateX(23rem);
     width: 100%;
     z-index: 9999;
 }
