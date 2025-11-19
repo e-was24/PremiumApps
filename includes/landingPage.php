@@ -9,7 +9,7 @@
                 dolorum.
             </p>
             <div class="btn-option">
-                <a href="" class="btn-masuk">Login</a>
+                <a href="" class="btn-masuk">Sign up</a>
                 <a href="" class="btn-masuk">Guest</a>
             </div>
         </div>
@@ -22,22 +22,3 @@
 
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.11.4/build/spline-viewer.js"></script>
 
-
-    <!-- <section class="landing-container">
-        <div class="card">
-            <img src="assets/img/logo.png" alt="Logo" class="logo">
-
-            <h1>Selamat Datang di <?= $app['title'] ?></h1>
-            <p class="subtitle">Silakan pilih mode akses Anda</p>
-
-            <div class="btn-group">
-                <a href="?guest=1" class="btn guest-btn">
-                    Masuk sebagai Guest
-                </a>
-
-                <a href="pages/auth/login.php" class="btn login-btn">
-                    Login / Register
-                </a>
-            </div>
-        </div>
-    </section> -->
