@@ -49,6 +49,7 @@ button {
 }
 
 /* DESKTOP BUTTON */
+#navbar .btn-signIn a,
 #navbar ul .btn-cover a {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
@@ -64,6 +65,7 @@ button {
     transition: .3s ease-in-out;
 }
 
+#navbar .btn-signIn a:hover,
 #navbar ul .btn-cover a:hover {
     background: #333;
     box-shadow: 0 0 40px #7777778f;
@@ -138,6 +140,7 @@ button {
         width: 100%;
     }
 
+    #navbar .btn-signIn a,
     #navbar ul li a {
         display: flex;
         align-items: center;
@@ -152,6 +155,7 @@ button {
         font-weight: 500;
     }
 
+    #navbar .btn-signIn a:hover,
     #navbar ul li a:hover {
         border-bottom: 2px solid #e3e3e3;
         padding-left: 10px;
@@ -160,6 +164,7 @@ button {
     /* ===================== */
     /*  MOBILE BUTTON STYLE  */
     /* ===================== */
+    #navbar .btn-signIn a,
     #navbar ul .btn-cover a {
         display: flex;
         justify-content: center;
@@ -172,7 +177,7 @@ button {
         color: #fff;
         font-size: 1em;
     }
-
+    #navbar .btn-signIn a:hover,
     #navbar ul .btn-cover a:hover {
         background: #333;
         box-shadow: 0 0 25px #5555;
