@@ -15,7 +15,7 @@
 
     <!-- COMPONENTS -->
     <link rel="stylesheet" href="assets/css/navbarV1.0.28.css">
-    <link rel="stylesheet" href="assets/css/landingPageV1.0.19.css">
+    <link rel="stylesheet" href="assets/css/landingPageV1.0.20.css">
 </head>
 
 <body>

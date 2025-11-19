@@ -101,6 +101,7 @@
 @media (max-width: 992px) {
     .content {
         flex-direction: column;
+        justify-content: center;
         text-align: center;
         gap: 2rem;
     }
