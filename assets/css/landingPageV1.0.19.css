@@ -58,7 +58,7 @@
 .content .model {
     position: absolute;
     right: -5rem;      /* geser lebih ke kanan */
-    transform: translateX(24rem);  /* tambah jarak horizontal */
+    transform: translateX(23rem);  /* tambah jarak horizontal */
     width: 100%;
     z-index: 9999;
 }
