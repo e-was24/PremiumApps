@@ -9,7 +9,7 @@
     <div class="logo"><span>Premium</span><br>Apps .</div>
 
     <ul>
-        <li><a href="#">
+        <li class="btn-cover" ><a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#e3e3e3">
                     <path
@@ -18,7 +18,7 @@
                 Home
             </a></li>
 
-        <li><a href="#">
+        <li class="btn-cover" ><a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#e3e3e3">
                     <path
@@ -27,7 +27,7 @@
                 Transaction
             </a></li>
 
-        <li><a href="#">
+        <li class="btn-cover" ><a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#e3e3e3">
                     <path
@@ -36,7 +36,7 @@
                 Price
             </a></li>
 
-        <li><a href="#">
+        <li class="btn-cover" ><a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#e3e3e3">
                     <path
