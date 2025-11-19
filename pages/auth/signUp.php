@@ -3,6 +3,10 @@
 <link rel="stylesheet" href="../../assets/css/navbarV1.0.30.css">
 <link rel="stylesheet" href="../../assets/css/SignUpV1.0.1.css">
 
+<!-- WebGL Background -->
+<canvas id="bg-canvas"></canvas>
+
+
 <div class="cover">
     <div class="registration-sheet">
         <h2>Register Now</h2>
