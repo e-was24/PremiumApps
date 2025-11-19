@@ -1,9 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
-    document.getElementById("signupForm").addEventListener("submit", async function (e) {
+    const form = document.getElementById("signupForm");
+    const btn = document.getElementById("btn-signUp");
+
+    form.addEventListener("submit", async function (e) {
         e.preventDefault();
 
-        const btn = document.getElementById("btn-signUp");
+        // Disable button while processing
         btn.disabled = true;
         btn.innerText = "Processing...";
 
@@ -12,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const password = document.getElementById("password").value;
         const confirmPassword = document.getElementById("confirm-password").value;
 
-        // ==== VALIDATION ====
+        // ===== FRONT-END VALIDATION =====
         if (username.length < 3) {
             alert("Username must be at least 3 characters.");
             return resetBtn();
@@ -33,13 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
             return resetBtn();
         }
 
-        // ==== SEND DATA ====
-        try {
-            const formData = new FormData();
-            formData.append("username", username);
-            formData.append("email", email);
-            formData.append("password", password);
+        // ===== PREPARE DATA =====
+        const formData = new FormData();      // <-- DEKLARASI DI SINI (AMAN)
+        formData.append("username", username);
+        formData.append("email", email);
+        formData.append("password", password);
 
+        // ===== SEND TO API =====
+        try {
             const res = await fetch("../../api/SignUp.php", {
                 method: "POST",
                 body: formData
@@ -54,16 +58,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert(data.msg || "Registration failed.");
             }
 
-        } catch (err) {
-            console.error(err);
+        } catch (error) {
+            console.error(error);
             alert("Network error. Please try again.");
         }
 
         resetBtn();
     });
 
+    // ===== RESET BUTTON FUNCTION =====
     function resetBtn() {
-        const btn = document.getElementById("btn-signUp");
         btn.disabled = false;
         btn.innerText = "Sign Up";
     }
