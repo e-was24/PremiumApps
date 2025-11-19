@@ -20,26 +20,27 @@
 
 <body>
 
-    <canvas id="bg-canvas">
+    <!-- WebGL Background -->
+    <canvas id="bg-canvas"></canvas>
 
-        <!-- FIXED NAVBAR -->
-        <?php include __DIR__ . '/includes/navbar.php'; ?>
+    <!-- FIXED NAVBAR -->
+    <?php include __DIR__ . '/includes/navbar.php'; ?>
 
-        <!-- MAIN CONTENT -->
-        <main class="container">
+    <!-- MAIN CONTENT -->
+    <main class="container">
 
-            <section class="landing" data-aos="fade-up">
-                <?php include __DIR__ . '/includes/landingPage.php'; ?>
-            </section>
+        <section class="landing" data-aos="fade-up">
+            <?php include __DIR__ . '/includes/landingPage.php'; ?>
+        </section>
 
-            <footer class="footer">
-                <?php include __DIR__ . '/includes/footer.php'; ?>
-            </footer>
+        <footer class="footer">
+            <?php include __DIR__ . '/includes/footer.php'; ?>
+        </footer>
 
-        </main>
-    </canvas>
-
+    </main>
+    
 </body>
+
 <!-- AOS JS -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
