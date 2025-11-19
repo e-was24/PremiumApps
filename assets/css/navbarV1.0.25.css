@@ -93,7 +93,7 @@ button {
         top: 0;
         left: -150dvw;
         /* sembunyikan full off-screen */
-        width: 40%;
+        width: 25dvw;
         height: fit-content;
         background: rgba(20, 20, 20, 0.95);
         backdrop-filter: blur(12px);
