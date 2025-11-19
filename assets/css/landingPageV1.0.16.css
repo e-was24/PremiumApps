@@ -55,18 +55,18 @@
     box-shadow: 0 0 20px #757575;
 }
 
-/* RIGHT MODEL */
 .content .model {
     position: absolute;
-    right: 0;
-    transform: translateX(25rem);
+    right: -5rem;      /* geser lebih ke kanan */
+    transform: translateX(25rem);  /* tambah jarak horizontal */
     width: 100%;
+    pointer-events: none;
     z-index: 9999;
 }
 
 .content .model img {
     position: absolute;
-    right: 20rem;
+    right: 25rem;
     top: 3rem;
 }
 
