@@ -149,12 +149,13 @@ button {
         padding-left: 10px;
     }
 
-    /* ===== MOBILE BUTTON ===== */
+    /* ===== MOBILE BUTTON (fixed) ===== */
     nav ul .btn-cover a {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 12px 25px;
+        width: fit-content;
+        padding: 10px 40px;
         border-radius: 50px;
         border: 1px solid #fff;
         background: #111;
@@ -167,7 +168,8 @@ button {
         box-shadow: 0 0 25px #5555;
     }
 
-    /* Hamburger button */
+
+    /* Hamburger button (fixed) */
     #menu {
         position: fixed;
         top: 20px;
@@ -177,14 +179,15 @@ button {
         border-radius: 12px;
         border: 1px solid #222;
         cursor: pointer;
-        z-index: 1000;
+        z-index: 999999;
         transition: .35s ease-in-out;
         box-shadow: 0 0 15px #0005;
         display: block;
     }
 
     #menu.active {
-        left: calc(60% - 0px);
+        left: 20px;
+        /* tetap kiri */
         background: #222;
         box-shadow: 0 0 20px #0009;
     }
