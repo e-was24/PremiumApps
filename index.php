@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title><?= htmlspecialchars($app['title'] ?? 'My App') ?> - Welcome</title>
+    <title><?= htmlspecialchars($app['title'] ?? 'Premium Apps') ?> | Welcome</title>
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets/css/styleV1.0.css">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- COMPONENTS -->
-    <link rel="stylesheet" href="assets/css/navbarV1.0.12.3.css">
+    <link rel="stylesheet" href="assets/css/navbarV1.0.13.css">
     <link rel="stylesheet" href="assets/css/landingPageV1.0.12.1.css">
 </head>
 
