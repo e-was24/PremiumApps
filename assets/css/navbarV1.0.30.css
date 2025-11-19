@@ -10,6 +10,10 @@ button {
     display: none;
 }
 
+#navbar .btn-signIn {
+    list-style: none;
+}
+
 
 /* ========================= */
 /*        DESKTOP NAVBAR     */
