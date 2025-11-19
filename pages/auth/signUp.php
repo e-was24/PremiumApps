@@ -1,7 +1,7 @@
 <?php include "../../includes/header.php"; ?>
 <?php include "../../includes/signUp-navbar.php"; ?>
 <link rel="stylesheet" href="../../assets/css/navbarV1.0.30.css">
-<link rel="stylesheet" href="../../assets/css/SignUpV1.0.1.css">
+<link rel="stylesheet" href="../../assets/css/SignUpV1.0.2.css">
 
 <!-- WebGL Background -->
 <canvas id="bg-canvas"></canvas>
