@@ -90,7 +90,7 @@ button {
     nav {
         position: fixed;
         top: 0;
-        left: -100%;
+        left: -100dvw;
         width: 60%;
         height: 100dvh;
         background: rgba(20, 20, 20, 0.95);
