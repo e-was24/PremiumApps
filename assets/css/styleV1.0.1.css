@@ -1,0 +1,117 @@
+/* ======================= */
+/*       GLOBAL STYLE      */
+/* ======================= */
+
+body {
+    margin: 0;
+    background: #111;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+/* WebGL Canvas – aman untuk semua device */
+canvas {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    min-width: 1px;
+    min-height: 1px;
+}
+
+/* Navbar fixed */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px 20px;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+}
+
+
+/* ======================= */
+/*        RESPONSIVE       */
+/* ======================= */
+
+/* 2K – 4K */
+@media (min-width: 2000px) {
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        padding: 20px 40px;
+    }
+}
+
+/* Desktop */
+@media (max-width: 1440px) {
+    .navbar {
+        padding: 15px 25px;
+    }
+}
+
+/* Laptop */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 12px 18px;
+    }
+}
+
+/* Tablet Landscape */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+}
+
+/* Tablet Portrait */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
+    .navbar {
+        padding: 10px 14px;
+    }
+
+    .container {
+        padding-top: 4rem;
+    }
+}
+
+/* HP Besar */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px 12px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+/* HP Kecil */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 8px 10px;
+    }
+}
+
+/* Extra Small */
+@media (max-width: 360px) {
+    .navbar {
+        padding: 6px 10px;
+    }
+}
