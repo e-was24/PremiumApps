@@ -69,7 +69,6 @@ button {
     box-shadow: 0 0 40px #7777778f;
 }
 
-
 /* ========================= */
 /*       MEDIA QUERY         */
 /* ========================= */
@@ -86,18 +85,20 @@ button {
 
 @media (max-width: 998px) {
 
-    /* MOBILE NAV (slide) */
+    /* ===================== */
+    /*     MOBILE NAV SLIDE  */
+    /* ===================== */
     nav {
         position: fixed;
         top: 0;
-        left: -100dvw;
+        left: -100dvw; /* sembunyikan full off-screen */
         width: 60%;
         height: 100dvh;
         background: rgba(20, 20, 20, 0.95);
         backdrop-filter: blur(12px);
         padding: 7rem 2rem;
         transition: .35s ease-in-out;
-        z-index: 999;
+        z-index: 9999; /* navbar di atas semua konten */
         display: flex;
         flex-direction: column;
         gap: 4rem;
@@ -110,7 +111,9 @@ button {
         left: 0;
     }
 
-    /* Mobile logo */
+    /* ===================== */
+    /*     MOBILE LOGO       */
+    /* ===================== */
     nav .logo {
         width: fit-content;
         font-size: 1.7em;
@@ -122,6 +125,9 @@ button {
         color: white;
     }
 
+    /* ===================== */
+    /*     NAV LINKS         */
+    /* ===================== */
     nav ul {
         list-style: none;
         display: flex;
@@ -149,7 +155,9 @@ button {
         padding-left: 10px;
     }
 
-    /* ===== MOBILE BUTTON (fixed) ===== */
+    /* ===================== */
+    /*  MOBILE BUTTON STYLE  */
+    /* ===================== */
     nav ul .btn-cover a {
         display: flex;
         justify-content: center;
@@ -168,8 +176,9 @@ button {
         box-shadow: 0 0 25px #5555;
     }
 
-
-    /* Hamburger button (fixed) */
+    /* ===================== */
+    /*    HAMBURGER BUTTON   */
+    /* ===================== */
     #menu {
         position: fixed;
         top: 20px;
@@ -179,15 +188,17 @@ button {
         border-radius: 12px;
         border: 1px solid #222;
         cursor: pointer;
-        z-index: 999999;
+        z-index: 999999; /* paling tinggi */
         transition: .35s ease-in-out;
         box-shadow: 0 0 15px #0005;
         display: block;
     }
 
+    /* Saat menu terbuka → pindah ke pojok kanan */
     #menu.active {
-        left: 20px;
-        /* tetap kiri */
+        top: 20px;
+        right: 20px;
+        left: auto; /* override left */
         background: #222;
         box-shadow: 0 0 20px #0009;
     }
