@@ -10,8 +10,8 @@ button {
     display: none;
 }
 
-#navbar .btn-signIn {
-    list-style: none;
+#navbar li .btn-signIn::marker {
+    display: none;
 }
 
 
