@@ -9,6 +9,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 /* WebGL Canvas – aman untuk semua device */
 #bg-canvas {
     position: fixed;
