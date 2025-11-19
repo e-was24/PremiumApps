@@ -34,7 +34,9 @@
                     <input type="password" placeholder="password" id="confirm-password" required>
                 </label>
             </div>
-
+            <p class="mantion">
+                We will keep your account confidential. Make sure the password you use meets the requirements.
+            </p>
             <button id="btn-signUp" type="submit">Sign Up</button>
         </form>
     </div>
