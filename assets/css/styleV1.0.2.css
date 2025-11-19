@@ -10,16 +10,19 @@ body {
 }
 
 /* WebGL Canvas – aman untuk semua device */
-canvas {
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
+    z-index: -1; /* jadi background */
     display: block;
-    min-width: 1px;
-    min-height: 1px;
 }
 
+
 /* Navbar fixed */
-.navbar {
+/* .navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -32,7 +35,7 @@ canvas {
     padding: 15px 20px;
     background: rgba(0,0,0,0.2);
     backdrop-filter: blur(8px);
-}
+} */
 
 
 /* ======================= */
