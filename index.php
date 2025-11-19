@@ -8,7 +8,7 @@
     <title><?= htmlspecialchars($app['title'] ?? 'Premium Apps') ?> | Welcome</title>
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="assets/css/styleV1.0.2.css">
+    <link rel="stylesheet" href="assets/css/styleV1.0.3.css">
 
     <!-- AOS ANIMATION -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
