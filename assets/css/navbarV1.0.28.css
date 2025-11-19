@@ -88,12 +88,12 @@ button {
     /* ===================== */
     /*     MOBILE NAV SLIDE  */
     /* ===================== */
-    nav {
+    #navbar {
         position: fixed;
         top: 0;
         left: -150dvw;
         /* sembunyikan full off-screen */
-        width: fit-content;
+        width: 60%;
         height: fit-content;
         background: rgba(20, 20, 20, 0.95);
         backdrop-filter: blur(12px);
@@ -109,14 +109,14 @@ button {
         font-family: "Poppins", sans-serif;
     }
 
-    nav.show {
+    #navbar.show {
         left: 0;
     }
 
     /* ===================== */
     /*     MOBILE LOGO       */
     /* ===================== */
-    nav .logo {
+    #navbar .logo {
         width: fit-content;
         font-size: 1.7em;
         font-weight: 700;
@@ -128,9 +128,9 @@ button {
     }
 
     /* ===================== */
-    /*     NAV LINKS         */
+    /*   nav LINKS         */
     /* ===================== */
-    nav ul {
+    #navbar ul {
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -138,7 +138,7 @@ button {
         width: 100%;
     }
 
-    nav ul li a {
+    #navbar ul li a {
         display: flex;
         align-items: center;
         gap: .9rem;
@@ -152,7 +152,7 @@ button {
         font-weight: 500;
     }
 
-    nav ul li a:hover {
+    #navbar ul li a:hover {
         border-bottom: 2px solid #e3e3e3;
         padding-left: 10px;
     }
@@ -160,7 +160,7 @@ button {
     /* ===================== */
     /*  MOBILE BUTTON STYLE  */
     /* ===================== */
-    nav ul .btn-cover a {
+    #navbar ul .btn-cover a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -173,7 +173,7 @@ button {
         font-size: 1em;
     }
 
-    nav ul .btn-cover a:hover {
+    #navbar ul .btn-cover a:hover {
         background: #333;
         box-shadow: 0 0 25px #5555;
     }
