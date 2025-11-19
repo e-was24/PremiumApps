@@ -1,7 +1,5 @@
 <?php
 header("Content-Type: application/json");
-// proses JSON POST
-echo json_encode(["status"=>"success"]);
 
 // =====================
 //  READ RAW JSON INPUT
@@ -9,6 +7,7 @@ echo json_encode(["status"=>"success"]);
 $raw = file_get_contents("php://input");
 $data = json_decode($raw, true);
 
+// Ambil input
 $username = trim($data["username"] ?? "");
 $email    = trim($data["email"] ?? "");
 $password = $data["password"] ?? "";
@@ -62,7 +61,7 @@ foreach ($users as $u) {
 }
 
 // =====================
-//     SECURITY LAYER
+//  SECURITY LAYER
 // =====================
 
 // Hash password (bcrypt)
@@ -73,7 +72,7 @@ $vector1 = bin2hex(random_bytes(16));
 $vector2 = base64_encode(random_bytes(24)); 
 
 // =====================
-//     SAVE NEW USER
+//  SAVE NEW USER
 // =====================
 $users[] = [
     "username"      => $username,
@@ -88,4 +87,6 @@ $users[] = [
 // Save JSON
 file_put_contents($data_file, json_encode($users, JSON_PRETTY_PRINT));
 
+// Response JSON final
 echo json_encode(["status" => "success", "msg" => "Account created successfully"]);
+exit;
