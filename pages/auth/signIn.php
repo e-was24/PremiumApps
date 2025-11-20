@@ -1,8 +1,8 @@
 <?php include "../../includes/header.php"; ?>
 <?php include "../../includes/signIn-navbar.php"; ?>
-<link rel="stylesheet" href="../../assets/css/navbarV1.0.30.css">
+<link rel="stylesheet" href="../../assets/css/navbarV1.0.31.css">
 <link rel="stylesheet" href="../../assets/css/SignInV1.0.0.css">
-<link rel="stylesheet" href="../../assets/css/styleV1.0.6.css">
+<link rel="stylesheet" href="../../assets/css/styleV1.0.7.css">
 
 <canvas id="bg-canvas"></canvas>
 
@@ -33,6 +33,6 @@
 </div>
 
 <script src="../../assets/js/auth/SignInV1.js"></script>
-<script src="../../assets/js/navbarV1.0.3.js"></script>
+<script src="../../assets/js/navbarV1.0.4.js"></script>
 
 <?php include "../../includes/footer.php"; ?>
