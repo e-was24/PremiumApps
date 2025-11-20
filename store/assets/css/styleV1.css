@@ -30,26 +30,15 @@ body {
 }
 
 
-/* Navbar fixed */
-/* .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 15px 20px;
-    background: rgba(0,0,0,0.2);
-    backdrop-filter: blur(8px);
-} */
-
-
-/* ======================= */
-/*        RESPONSIVE       */
-/* ======================= */
+.container {
+    min-height: 100dvh;
+    height: fit-content;
+    background: #222;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px #4444445b;
+    padding: 10px;
+}
 
 /* 2K – 4K */
 @media (min-width: 2000px) {
