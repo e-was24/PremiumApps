@@ -15,11 +15,11 @@ body {
 .registration-sheet {
     width: fit-content;
     height: fit-content;
-    padding: 2.5rem 5rem;
+    padding: 1.5rem 2.5rem;
     background: #2a2a2a;
     box-shadow: 0 0 40px #3333336a;
     border-radius: 20px;
-    margin-top: 10rem;
+    margin-top: 20rem;
     margin-bottom: 10rem;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .registration-sheet form input {
-    width: 200px;
+    width: 250px;
     height: 20px;
     border-radius: 10px;
     padding: 10px;
@@ -64,13 +64,10 @@ body {
 
 .registration-sheet form .password {
     display: flex;
+    gap: .5rem;
 }
 
 
-.registration-sheet form .password #password,
-.registration-sheet form .password #confirm-password {
-    width: 80px;
-}
 
 /* end */
 
@@ -83,7 +80,7 @@ body {
 
 /* button */
 
-.registration-sheet form #btn-signUp {
+.registration-sheet form #btn-signIn {
     display: block;
     padding: 10px 40px;
     border-radius: 50px;
@@ -94,7 +91,7 @@ body {
     cursor: pointer;
 }
 
-.registration-sheet form #btn-signUp:hover {
+.registration-sheet form #btn-signIn:hover {
     background: #5c5c5c;
     box-shadow: 0 0 30px gray;
 }
