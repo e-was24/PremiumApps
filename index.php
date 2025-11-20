@@ -51,6 +51,6 @@
 </script>
 
 <!-- JS NAVBAR -->
-<script src="assets/js/navbarV1.0.3.js"></script>
+<script src="assets/js/navbarV1.0.4.js"></script>
 
 </html>
