@@ -24,15 +24,15 @@
                 Ensure your password is correct.
             </p>
 
+            <!-- Element untuk menampilkan error -->
             <p id="error-msg" style="color:#ff4d4d; font-size:14px; margin-top:10px; display:none;"></p>
 
             <button id="btn-signIn" type="submit">Sign In</button>
         </form>
-
     </div>
 </div>
 
-<script src="../../assets/js/auth/SignInV1.js"></script>
+<script src="../../assets/js/auth/SignInV1.0.js"></script>
 <script src="../../assets/js/navbarV1.0.4.js"></script>
 
 <?php include "../../includes/footer.php"; ?>

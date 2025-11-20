@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const password = document.getElementById("password").value.trim();
 
         if (login_id.length < 3) {
-            showError("Invalid username or email");
+            showError("Invalid username/email");
             return setBtn(false, "Sign In");
         }
 
@@ -45,22 +45,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 body: JSON.stringify(payload)
             });
 
-            const data = await res.json().catch(async () => {
-                showError("Server error (invalid JSON)");
+            const data = await res.json().catch(() => {
+                showError("Server returned invalid JSON");
                 return null;
             });
 
             if (!data) return setBtn(false, "Sign In");
 
             if (data.status === "success") {
+                // REDIRECT KE store/index.php
                 window.location.href = "../../store/index.php";
                 return;
             }
 
-            // MUNCULKAN ERROR DARI BACKEND
+            // Tampilkan error dari backend
             showError(data.msg || "Login failed");
 
         } catch (err) {
+            console.error(err);
             showError("Network error");
         }
 

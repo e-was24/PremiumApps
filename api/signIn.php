@@ -5,11 +5,11 @@ ob_start();
 header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 
-// Ambil JSON raw
+// Ambil JSON raw dari request
 $raw = file_get_contents("php://input");
 $input = json_decode($raw, true);
 
-// Jika gagal decode JSON
+// Jika JSON kosong atau rusak
 if (!$input) {
     echo json_encode(["status" => "error", "msg" => "Invalid JSON"]);
     exit;
@@ -18,7 +18,7 @@ if (!$input) {
 $login_id = trim($input["login_id"] ?? "");
 $password = $input["password"] ?? "";
 
-// Validasi basic
+// Validasi dasar
 if (strlen($login_id) < 3) {
     echo json_encode(["status" => "error", "msg" => "Invalid username/email"]);
     exit;
@@ -29,7 +29,7 @@ if (strlen($password) < 6) {
     exit;
 }
 
-// Path DB JSON
+// Path database JSON
 $dbFile = __DIR__ . "/../storage/db/userAccount.json";
 
 if (!file_exists($dbFile)) {
@@ -37,6 +37,7 @@ if (!file_exists($dbFile)) {
     exit;
 }
 
+// Baca JSON DB
 $users = json_decode(file_get_contents($dbFile), true);
 
 if (!is_array($users)) {
@@ -58,20 +59,21 @@ if (!$found) {
     exit;
 }
 
-// Verify password
+// Verifikasi password
 if (!password_verify($password, $found["password_hash"])) {
     echo json_encode(["status" => "error", "msg" => "Wrong password"]);
     exit;
 }
 
-// ===== IMPORTANT =====
-// Simpan SESSION
+// Simpan session
+$_SESSION['logged_in'] = true;
 $_SESSION['user'] = [
     "username" => $found["username"],
     "email"    => $found["email"],
     "role"     => $found["role"]
 ];
 
+// Response sukses
 echo json_encode([
     "status" => "success",
     "msg" => "Login success",
