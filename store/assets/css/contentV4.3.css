@@ -1,0 +1,39 @@
+#product_output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-out {
+    position: relative;
+    margin: 10px 20px;
+    background: #363636;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: ease-in-out .3s;
+}
+
+.product-out:hover {
+    scale: 1.1;
+}
+
+.card-link {
+    color: white;
+    text-decoration: none;
+}
+
+.product-err {
+    text-align: center;
+}
+
+.product-err span{
+    color: gray;
+}

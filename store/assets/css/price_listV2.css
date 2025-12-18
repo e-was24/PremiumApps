@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background: #111;
+    font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* price list content */
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.table {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    border: none;
+}
+
+.table tr th {
+    padding: 10px 20px;
+    border: 1px solid #666;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.table tr td {
+    border: none;
+    padding: 20px 10px;
+    border-bottom: 1px solid #666;
+}
+
+.table tr td.code {
+    background: linear-gradient(45deg, #6c7218, #b47e18);
+    font-family: monospace;
+    font-size: larger;
+}
+
+.table tr td.brand {
+    background: linear-gradient(45deg, #5252aa, #35357a);
+}
+
+.table tr td:first-child {
+    border-left: 1px solid #666;
+}
+
+.table tr td:last-child {
+    border-right: 1px solid #666;
+}
+
+.table .status {
+    width: 150px;
+}
+
+.table .status span {
+    font-family: monospace;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase; 
+}
+
+.cover h2 {
+    color: white;
+}
+
+.cover h2 span {
+    color: #9292d3;
+}
+
+.cover h5 {
+    color: white;
+    margin: 10px 0px;
+}
+
+.cover h5 span {
+    color: #95e712;
+    background: #5c8516;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+    color: white;
+    font-weight: 200;
+}
+
+.page-level a.click {
+    color: white;
+    background: #35357a;
+}
+
+.page-level a {
+    color: #636566;
+    font-weight: 700;
+    text-decoration: none;
+    background: #35357a93;
+    padding: 10px;
+    font-family: monospace;
+    border-radius: 10px;
+}
+
+
+
+/* option */
+
+form select option {
+    text-transform: uppercase;
+}
+
+form select option .list {
+    background: transparent;
+}
+
+form select {
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    background: #111;
+    color: white;
+}
+
+form select::-webkit-scrollbar {
+    width: 5px;
+}
